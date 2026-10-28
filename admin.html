@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administration — StageMatch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="supabase-client.js" defer></script>
+  <script src="supabase-shop.js" defer></script>
+  <script src="auth-ui.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span>StageMatch</span></a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="offres.html">Offres</a><a href="entreprise.html">Espace entreprise</a><a href="compte.html">Mon compte</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu" class="section container">
+    <p><a class="button button-secondary" href="index.html">← Retour à l’accueil</a></p>
+    <section class="form-card" id="admin-page">
+      <span class="eyebrow">StageMatch</span>
+      <h1>Administration</h1>
+      <p id="admin-status" role="status" aria-live="polite">Vérification de l’accès…</p>
+
+      <section aria-labelledby="admin-offers-heading">
+        <h2 id="admin-offers-heading">Gestion des offres</h2>
+        <p>Les offres peuvent être publiées ou retirées du catalogue. Elles ne sont pas supprimées afin de préserver l’historique des candidatures.</p>
+        <form id="admin-offer-form" class="form-grid">
+          <input type="hidden" name="offer_id">
+          <div class="field"><label for="admin-title">Titre</label><input id="admin-title" name="title" minlength="4" maxlength="160" required></div>
+          <div class="field"><label for="admin-company">Entreprise</label><input id="admin-company" name="company_name" required></div>
+          <div class="field"><label for="admin-city">Ville</label><input id="admin-city" name="city" required></div>
+          <div class="field"><label for="admin-specialty">Spécialité</label><input id="admin-specialty" name="specialty" required></div>
+          <div class="field"><label for="admin-period">Période</label><input id="admin-period" name="period"></div>
+          <div class="field"><label for="admin-duration">Durée</label><input id="admin-duration" name="duration"></div>
+          <div class="field full"><label for="admin-skills">Compétences séparées par des virgules</label><input id="admin-skills" name="skills"></div>
+          <div class="field full"><label for="admin-description">Description</label><textarea id="admin-description" name="description" rows="5" required></textarea></div>
+          <label><input name="is_published" type="checkbox"> Publier dans le catalogue</label>
+          <div class="field full"><button class="button button-primary" type="submit">Ajouter l’offre</button><button class="button button-secondary" id="admin-offer-cancel" type="button" hidden>Annuler la modification</button></div>
+        </form>
+        <div id="admin-offers" class="offer-grid" aria-live="polite"></div>
+      </section>
+
+      <section aria-labelledby="admin-applications-heading">
+        <h2 id="admin-applications-heading">Gestion des candidatures</h2>
+        <div class="field"><label for="admin-status-filter">Filtrer par statut</label><select id="admin-status-filter"><option value="all">Tous les statuts</option><option value="new">Nouvelle</option><option value="reviewing">En cours</option><option value="accepted">Acceptée</option><option value="rejected">Refusée</option></select></div>
+        <p id="admin-applications-count" class="muted">Les 100 candidatures les plus récentes au maximum.</p>
+        <div id="admin-applications" class="offer-grid" aria-live="polite"></div>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-bottom"><span>Administration StageMatch</span></div></footer>
+</body>
+</html>

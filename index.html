@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StageMatch rapproche les étudiants et les entreprises pour trouver le bon stage au bon profil.">
+  <title>StageMatch — Le bon stage, au bon profil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script><script src="supabase-client.js" defer></script><script src="supabase-shop.js" defer></script><script src="auth-ui.js" defer></script><script src="script.js" defer></script>
+</head>
+<body class="home-page">
+  
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="StageMatch, accueil"><span class="brand-mark">S</span><span>StageMatch</span></a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navigation" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a><a href="offres.html">Offres</a><a href="fonctionnement.html">Fonctionnement</a><a href="contact.html">Contact</a>
+        <a class="nav-cta" href="offres.html">Découvrir les stages</a>
+      <a href="login.html">Connexion</a><a href="entreprise.html">Espace entreprise</a></nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Le bon stage, au bon profil.</span>
+          <h1>Trouvez le stage qui correspond à votre profil.</h1>
+          <p class="lead">StageMatch vous aide à découvrir des offres de stage adaptées à votre spécialité, vos compétences, votre ville et votre période de disponibilité.</p>
+          <div class="actions"><a class="button button-primary" href="offres.html">Découvrir les stages <span aria-hidden="true"></span></a><a class="button button-secondary" href="#espace-entreprise">Espace entreprise</a></div>
+          <div class="proof"><span class="proof-dot"></span><strong>Prototype universitaire</strong><span>Une démonstration simple et transparente</span></div>
+        </div>
+        <div class="visual-stage" aria-label="Illustration d'un profil étudiant mis en relation avec une offre">
+          <div class="orb"></div>
+          <article class="visual-card">
+            <div class="visual-top"><span>APERÇU DU MATCHING</span><span class="live-dot">● Démonstration</span></div>
+            <div class="profile-row"><div class="avatar">É</div><div><strong>Profil étudiant</strong><small>Informatique de Gestion · Sousse</small></div></div>
+            <div class="match-line"><span>profil et offre</span></div>
+            <div class="score-row"><div><strong>Assistant en gestion des données</strong><small>Offre fictive · Sousse</small></div><strong class="score">95%</strong></div>
+            <div class="skill-list"><span class="chip">SQL</span><span class="chip">Excel</span><span class="chip">Juillet</span></div>
+          </article>
+          <div class="floating-note">✦ Une recherche plus ciblée</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head center"><span class="eyebrow">Simple, étape par étape</span><h2>Du profil à la candidature</h2><p class="lead">Une expérience pensée pour rendre la recherche de stage plus claire et plus facile à suivre.</p></div>
+      <div class="grid-3">
+        <article class="card"><div class="step-number">01</div><h3>Créez votre profil</h3><p class="muted">Présentez votre spécialité, votre niveau, vos compétences et vos disponibilités.</p></article>
+        <article class="card"><div class="step-number">02</div><h3>Découvrez les offres adaptées</h3><p class="muted">Repérez les offres qui correspondent à vos critères et explorez les détails utiles.</p></article>
+        <article class="card"><div class="step-number">03</div><h3>Postulez et suivez</h3><p class="muted">Centralisez votre parcours de candidature et visualisez les prochaines étapes.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" id="espace-entreprise">
+      <div class="section-head center"><span class="eyebrow">Une plateforme pour chacun</span><h2>Des bénéfices des deux côtés</h2><p class="lead">StageMatch rapproche les attentes des étudiants et les besoins des entreprises.</p></div>
+      <div class="grid-2">
+        <article class="benefit-card"><h3>Pour les étudiants</h3><p>Passez moins de temps à chercher et gardez une vue claire sur vos démarches.</p><ul class="check-list"><li>Recherche simplifiée</li><li>Offres adaptées au profil</li><li>Candidatures centralisées</li><li>Suivi des candidatures</li></ul><a class="text-link" href="offres.html">Découvrir l’espace étudiant </a></article>
+        <article class="benefit-card employer"><h3>Pour les entreprises</h3><p>Présentez les missions et identifiez plus facilement les profils qui correspondent à vos critères.</p><ul class="check-list"><li>Publication structurée des offres</li><li>Réception des candidatures</li><li>Comparaison des profils</li><li>Gestion simplifiée des offres</li></ul><a class="text-link" href="fonctionnement.html#entreprises">Découvrir l’espace entreprise </a></article>
+      </div>
+    </section>
+
+<section class="section container"><div class="section-head"><span class="eyebrow">Découvrez les domaines de stage</span><h2>Un domaine adapté à votre parcours</h2><p class="lead">Explorez les catégories prévues dans StageMatch.</p></div><div class="category-grid"><a class="category-card" href="categorie-developpement-informatique.html"><span class="category-icon" aria-hidden="true">⌘</span><h3>Développement informatique</h3><p>Stages de développement web, logiciel et outils numériques.</p><span class="category-link">Découvrir les stages</span></a><a class="category-card" href="categorie-informatique-de-gestion.html"><span class="category-icon" aria-hidden="true">▦</span><h3>Informatique de Gestion</h3><p>Systèmes d’information, bases de données et applications de gestion.</p><span class="category-link">Découvrir les stages</span></a><a class="category-card" href="categorie-data-business-intelligence.html"><span class="category-icon" aria-hidden="true">▥</span><h3>Data et Business Intelligence</h3><p>Analyse de données, tableaux de bord et aide à la décision.</p><span class="category-link">Découvrir les stages</span></a><a class="category-card" href="categorie-reseaux-cybersecurite.html"><span class="category-icon" aria-hidden="true">⌁</span><h3>Réseaux et Cybersécurité</h3><p>Administration des réseaux, sécurité et infrastructure informatique.</p><span class="category-link">Découvrir les stages</span></a><a class="category-card" href="categorie-marketing-digital-communication.html"><span class="category-icon" aria-hidden="true">◎</span><h3>Marketing digital et Communication</h3><p>Marketing numérique, réseaux sociaux et communication digitale.</p><span class="category-link">Découvrir les stages</span></a><a class="category-card" href="categorie-gestion-administration.html"><span class="category-icon" aria-hidden="true">▤</span><h3>Gestion et Administration</h3><p>Gestion administrative, projets et assistance aux activités de l’entreprise.</p><span class="category-link">Découvrir les stages</span></a></div><p class="section-action"><a class="button button-secondary" href="offres.html">Découvrir toutes les offres</a></p></section>
+    <section class="section container" id="espace-etudiant">
+      <div class="section-head"><span class="eyebrow">Aperçu des opportunités</span><h2>Des offres à explorer</h2><p class="lead">Exemples fictifs pour illustrer la présentation d’une offre sur StageMatch.</p></div>
+      <div class="offer-grid">
+        <article class="offer-card"><span class="demo-banner">Exemple de démonstration</span><h3>Assistant en gestion des données</h3><p class="muted">DataNova (fictif) · Sousse · Juillet · 2 mois</p><div class="skill-list"><span class="chip">Informatique de Gestion</span><span class="chip">SQL</span><span class="chip">Excel</span></div><div class="offer-footer"><span class="match-mini">95% · score fictif</span><a class="text-link" href="detail-offre.html">Voir l’offre </a></div></article>
+        <article class="offer-card"><span class="demo-banner">Exemple de démonstration</span><h3>Assistant contrôle de gestion</h3><p class="muted">Cap Finance (fictif) · Tunis · Juin · 3 mois</p><div class="skill-list"><span class="chip">Informatique de Gestion</span><span class="chip">Excel</span><span class="chip">Power BI</span></div><div class="offer-footer"><span class="muted">Offre fictive</span><a class="text-link" href="detail-offre.html">Voir l’offre </a></div></article>
+        <article class="offer-card"><span class="demo-banner">Exemple de démonstration</span><h3>Développement d’un tableau de bord</h3><p class="muted">PixelLab (fictif) · Sfax · Juillet · 2 mois</p><div class="skill-list"><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">Data visualisation</span></div><div class="offer-footer"><span class="muted">Offre fictive</span><a class="text-link" href="detail-offre.html">Voir l’offre </a></div></article>
+      </div>
+      <p class="disclaimer">Données fictives créées pour la démonstration. Elles ne correspondent pas à des offres réelles.</p>
+      <p><a class="text-link" href="offres.html">Voir toutes les offres </a></p>
+    </section>
+
+    <section class="section container">
+      <div class="section-head center"><span class="eyebrow">Exemple de matching</span><h2>Des critères qui se rejoignent</h2><p class="lead">Une illustration du rapprochement entre le profil étudiant et les besoins d’une offre.</p></div>
+      <div class="match-demo"><article class="card"><span class="demo-banner">Profil étudiant · fictif</span><h3>Informatique de Gestion</h3><p class="muted">Sousse · disponible en juillet</p><div class="skill-list"><span class="chip">SQL</span><span class="chip">Excel</span><span class="chip">Gestion des données</span></div></article><div class="match-center"><strong>95%</strong><span>correspondance illustrative</span></div><article class="card"><span class="demo-banner">Offre · démonstration</span><h3>Assistant en gestion des données</h3><p class="muted">Sousse · période de juillet</p><div class="skill-list"><span class="chip">SQL</span><span class="chip">Excel</span></div></article></div>
+      <p class="disclaimer">Score fictif utilisé pour illustrer le fonctionnement du matching. Il ne résulte pas d’un calcul réel dans ce prototype.</p>
+    </section>
+
+    <section class="section container" id="espace-entreprise-demo">
+      <div class="section-head center"><span class="eyebrow">Espaces de démonstration</span><h2>Un parcours pensé pour chaque besoin</h2></div>
+      <div class="grid-2"><article class="card space-card"><div class="step-number">🎓</div><h3>Espace étudiant</h3><p class="muted">Explorez les offres, découvrez comment un profil pourrait être présenté et suivez un exemple de parcours de candidature.</p><ul class="check-list"><li>Découvrir les offres</li><li>Comprendre la création du profil</li><li>Voir les étapes de candidature</li></ul><a class="button button-secondary" href="fonctionnement.html#parcours">Voir le parcours étudiant</a></article><article class="card space-card"><div class="step-number">🏢</div><h3>Espace entreprise</h3><p class="muted">Découvrez comment une entreprise pourrait publier une offre et consulter les candidatures reçues.</p><ul class="check-list"><li>Structurer une offre de stage</li><li>Comparer des profils</li><li>Gérer les étapes de sélection</li></ul><a class="button button-secondary" href="fonctionnement.html#entreprises">Voir le parcours entreprise</a></article></div>
+      <p class="disclaimer">Ces espaces sont des aperçus statiques : les exemples restent fictifs; les comptes Supabase seront disponibles apres configuration.</p>
+    </section>
+
+    <section class="container cta-band"><div><h2>Prêt à trouver votre prochain stage ?</h2><p>Parcourez les exemples et découvrez le concept StageMatch.</p></div><a class="button button-primary" href="offres.html">Explorer les offres </a></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">S</span>StageMatch</a><p>Le bon stage, au bon profil. Une plateforme de démonstration universitaire dédiée au rapprochement entre étudiants et entreprises.</p></div><div><h3>Navigation</h3><div class="footer-links"><a href="offres.html">Offres de stage</a><a href="fonctionnement.html">Fonctionnement</a><a href="contact.html">Contact</a></div></div><div><h3>Contact</h3><a class="footer-links" href="contact.html">Écrivez-nous via le formulaire de démonstration</a><p class="notice">Aucune coordonnée de contact n’a été fournie.</p></div></div><div class="container footer-bottom"><span>© <span id="year"></span> StageMatch — Prototype universitaire HTML · CSS · JavaScript</span><span>Site de démonstration</span></div></footer>
+</body>
+</html>
+
+
+
+
+
+
